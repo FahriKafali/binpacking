@@ -1,55 +1,42 @@
-import matplotlib.pyplot as plt 
-import numpy as np 
-from mpl_toolkits.mplot3d.art3d import Poly3DCollection 
+import matplotlib.pyplot as plt
+import numpy as np
+from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
 def ciz_3d_paletler(paletler):
     """
     Tüm paletleri ve içindeki ürünleri 3D olarak çizer.
-    :param paletler: Paletlerin listesi, her biri içindeki ürünlerle birlikte gösterilir.
+    :param paletler: Paletlerin listesi, her biri içindeki ürünlerle birlikte.
     """
     fig = plt.figure(figsize=(12, 8))
     ax = fig.add_subplot(111, projection="3d")
 
-    palet_genislik, palet_derinlik, palet_yukseklik = 120, 100, 15  # Standart palet boyutları
+    # Palet boyutları
+    palet_genislik, palet_derinlik, palet_yukseklik = 120, 100, 180  # Örnek boyutlar
 
-    x_offset = 0
-    y_offset = 0
-
+    # Paletleri çizmeye başla
     for idx, palet in enumerate(paletler):
-        # Palet tabanı
-        palet_koordinatlar = [
-            [x_offset, y_offset, 0],
-            [x_offset + palet_genislik, y_offset, 0],
-            [x_offset + palet_genislik, y_offset + palet_derinlik, 0],
-            [x_offset, y_offset + palet_derinlik, 0]
-        ]
-        ax.add_collection3d(Poly3DCollection([palet_koordinatlar], color="brown", alpha=0.5))
+        x_offset = idx * (palet_genislik + 20)  # Paletler arasında boşluk bırak
 
-        # Ürünleri üst üste yerleştirerek göster
-        urun_z_offset = palet_yukseklik  
+        # Palet tabanını çiz
+        palet_kose_noktalari = np.array([
+            [x_offset, 0, 0], [x_offset + palet_genislik, 0, 0],
+            [x_offset + palet_genislik, palet_derinlik, 0], [x_offset, palet_derinlik, 0]
+        ])
+        ax.add_collection3d(Poly3DCollection([palet_kose_noktalari], color="brown", alpha=0.7))
 
+        yukseklik = 0
         for urun in palet.urunler:
-            urun_koordinatlar = [
-                [x_offset, y_offset, urun_z_offset],
-                [x_offset + urun.genislik, y_offset, urun_z_offset],
-                [x_offset + urun.genislik, y_offset + urun.derinlik, urun_z_offset],
-                [x_offset, y_offset + urun.derinlik, urun_z_offset],
-            ]
-            ax.add_collection3d(Poly3DCollection([urun_koordinatlar], color=np.random.rand(3,), alpha=0.7))
-            urun_z_offset += urun.yukseklik + 2  
+            urun_kose_noktalari = np.array([
+                [x_offset, 0, yukseklik], [x_offset + urun.genislik, 0, yukseklik],
+                [x_offset + urun.genislik, urun.derinlik, yukseklik], [x_offset, urun.derinlik, yukseklik]
+            ])
+            ax.add_collection3d(Poly3DCollection([urun_kose_noktalari], color="blue", alpha=0.5))
+            yukseklik += urun.yukseklik  # Üst üste koymak için
 
-        # Yeni paleti bir sonraki sıraya koy
-        x_offset += palet_genislik + 20  
-        if (idx + 1) % 4 == 0:  
-            x_offset = 0
-            y_offset += palet_derinlik + 20
-
+    # Eksenleri ayarla
     ax.set_xlabel("Genişlik (cm)")
     ax.set_ylabel("Derinlik (cm)")
     ax.set_zlabel("Yükseklik (cm)")
-    ax.set_title("3D Paletler ve Ürün Yerleşimi")
-    ax.set_xlim([0, x_offset + palet_genislik])
-    ax.set_ylim([0, y_offset + palet_derinlik])
-    ax.set_zlim([0, 250])
+    ax.set_title("3D Palet Görselleştirme")
 
     plt.show()

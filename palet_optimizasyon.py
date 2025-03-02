@@ -297,8 +297,7 @@ if mix_paletler:
 else:
     print("\n✔ Mix paletleme gerekli olmadı, tüm ürünler normal paletlere sığdı.")
 
-ciz_3d_paletler(normal_paletler)  # Normal paletleri çiz
-ciz_3d_paletler(mix_paletler)  # Mix paletleri çiz
+ciz_3d_paletler(normal_paletler+mix_paletler)  
 
 
 
