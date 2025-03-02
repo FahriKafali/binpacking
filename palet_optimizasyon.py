@@ -1,4 +1,5 @@
 from collections import defaultdict
+from palet_gorsellestirme import ciz_3d_paletler  # 3D palet çizim fonksiyonunu içe aktar
 
 class Urun:
     KIRILGANLIK_SEVIYELERI = {
@@ -295,6 +296,9 @@ if mix_paletler:
             print(f"  - {urun}")
 else:
     print("\n✔ Mix paletleme gerekli olmadı, tüm ürünler normal paletlere sığdı.")
+
+ciz_3d_paletler(normal_paletler)  # Normal paletleri çiz
+ciz_3d_paletler(mix_paletler)  # Mix paletleri çiz
 
 
 
