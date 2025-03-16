@@ -172,7 +172,7 @@ def akilli_palete_yerlestir(urun_listesi, secilen_palet):
             # Örnek olarak: "Bir palet daha DOLACAK KADAR ürün yoksa" (yaklaşık yükseklik/ağırlık hesabına göre)
             # bunların hepsini mix'e at.
             # Bunu netleştirmek için basit bir yaklaşım:
-            #    "Kalan ürün sayısı 2 veya 3'ten azsa, onları mix palete gönder."
+            #    "Kalan ürün sayısı 2 veya 3ten azsa, onları mix palete gönder."
 
             # Tabii ki "tam dolacak kadar var mı?" kontrolü için paletin boyut/ağırlık kapasitesine
             # ve tek tek ürünlerin boyutuna/ağırlığına bakmak gerek. 
@@ -264,7 +264,8 @@ urunler = [
     Urun("Klima", 42, 21, 18, 80, "Orta"),  
     Urun("Klima", 42, 21, 18, 80, "Orta"),  
     Urun("Klima", 42, 21, 18, 80, "Orta"),  
-    Urun("Klima", 42, 21, 18, 80, "Orta"),  
+    Urun("Klima", 42, 21, 18, 80, "Orta"),
+    Urun("Klima", 42, 21, 18, 80, "Orta"),   
     Urun("Mini Buzdolabı", 30, 30, 50, 100, "Az"),  
     Urun("Mini Buzdolabı", 30, 30, 50, 100, "Az"),  
     Urun("Mini Buzdolabı", 30, 30, 50, 100, "Az"),  
