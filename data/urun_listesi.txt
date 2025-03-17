@@ -1,0 +1,99 @@
+Buzdolabı,40,60,100,250,Az
+Buzdolabı,40,60,100,250,Az
+Buzdolabı,40,60,100,250,Az
+Buzdolabı,40,60,100,250,Az
+Buzdolabı,40,60,100,250,Az
+Buzdolabı,40,60,100,250,Az
+Buzdolabı,40,60,100,250,Az
+Buzdolabı,40,60,100,250,Az
+Buzdolabı,40,60,100,250,Az
+Buzdolabı,40,60,100,250,Az
+Buzdolabı,40,60,100,250,Az
+Buzdolabı,40,60,100,250,Az
+Çamaşır Makinesi,50,50,90,200,Az
+Çamaşır Makinesi,50,50,90,200,Az
+Çamaşır Makinesi,50,50,90,200,Az
+Çamaşır Makinesi,50,50,90,200,Az
+Çamaşır Makinesi,50,50,90,200,Az
+Çamaşır Makinesi,50,50,90,200,Az
+Çamaşır Makinesi,50,50,90,200,Az
+Çamaşır Makinesi,50,50,90,200,Az
+Çamaşır Makinesi,50,50,90,200,Az
+Çamaşır Makinesi,50,50,90,200,Az
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Televizyon,70,10,30,40,Çok
+Mikrodalga,30,30,30,50,Orta
+Mikrodalga,30,30,30,50,Orta
+Mikrodalga,30,30,30,50,Orta
+Mikrodalga,30,30,30,50,Orta
+Mikrodalga,30,30,30,50,Orta
+Mikrodalga,30,30,30,50,Orta
+Mikrodalga,30,30,30,50,Orta
+Mikrodalga,30,30,30,50,Orta
+Mikrodalga,30,30,30,50,Orta
+Mikrodalga,30,30,30,50,Orta
+Koli,40,40,50,60,Az
+Koli,40,40,50,60,Az
+Koli,40,40,50,60,Az
+Koli,40,40,50,60,Az
+Koli,40,40,50,60,Az
+Koli,40,40,50,60,Az
+Koli,40,40,50,60,Az
+Koli,40,40,50,60,Az
+Koli,40,40,50,60,Az
+Koli,40,40,50,60,Az
+Koli,40,40,50,60,Az
+Koli,40,40,50,60,Az
+Klima,60,30,40,100,Orta
+Klima,60,30,40,100,Orta
+Klima,60,30,40,100,Orta
+Klima,60,30,40,100,Orta
+Klima,60,30,40,100,Orta
+Klima,60,30,40,100,Orta
+Klima,60,30,40,100,Orta
+Klima,60,30,40,100,Orta
+Klima,60,30,40,100,Orta
+Klima,60,30,40,100,Orta
+Mini Buzdolabı,45,45,80,120,Az
+Mini Buzdolabı,45,45,80,120,Az
+Mini Buzdolabı,45,45,80,120,Az
+Mini Buzdolabı,45,45,80,120,Az
+Mini Buzdolabı,45,45,80,120,Az
+Mini Buzdolabı,45,45,80,120,Az
+Mini Buzdolabı,45,45,80,120,Az
+Mini Buzdolabı,45,45,80,120,Az
+Mini Buzdolabı,45,45,80,120,Az
+Mini Buzdolabı,45,45,80,120,Az
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
+Fırın,50,50,50,100,Orta
